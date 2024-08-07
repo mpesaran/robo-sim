@@ -1,0 +1,50 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .navbar-logo svg {
+    height: 60px;
+  }
+  
+  .navbar-nav {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    margin: 0;
+    padding: 0;
+    float: right;    
+  }
+  
+  .nav-item {
+    cursor: pointer;
+    font-family: 'Arial', sans-serif;
+    font-weight: 400;
+    color: #333;
+    
+  }
+  
+  .nav-item:hover {
+    color: #E15A1D;
+  }
+  
+  .navbar-icons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .search-icon,
+  .user-icon,
+  .cart-icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    color: #afafaf;
+  }
+  
+
+  

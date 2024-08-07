@@ -1,0 +1,110 @@
+/* General body styling */
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Heading styling */
+h1 {
+  font-weight: 600;
+  color: #333;
+}
+
+/* Grid container styling */
+.grid {
+  display: grid;
+  grid-template-rows: repeat(5, 50px);
+  grid-template-columns: repeat(5, 50px);
+  gap: 5px;
+  margin: 20px 0;
+  justify-content: center;
+}
+
+/* Row styling */
+.row {
+  display: contents;
+}
+
+/* Cell styling */
+.cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  transition: background-color 0.3s;
+}
+
+.cell.robot {
+  background-color: #049c8a;
+  color: white;
+}
+
+/* Robot direction styling */
+.robot.north::before {
+  content: '↑';
+  display: block;
+  color: white;
+  text-align: center;
+  line-height: 30px;
+}
+
+.robot.east::before {
+  content: '→';
+  display: block;
+  color: white;
+  text-align: center;
+  line-height: 30px;
+}
+
+.robot.south::before {
+  content: '↓';
+  display: block;
+  color: white;
+  text-align: center;
+  line-height: 30px;
+}
+
+.robot.west::before {
+  content: '←';
+  display: block;
+  color: white;
+  text-align: center;
+  line-height: 30px;
+}
+
+/* Controls container styling */
+.controls {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Button styling */
+.controls button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #E15A1D;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: box-shadow 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.controls button:hover {
+  background-color: #b84a17;
+  box-shadow: none;
+}
+
+/* Container styling */
+.container {
+  text-align: center;
+  padding: 20px;
+}
